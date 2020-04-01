@@ -1,9 +1,132 @@
+<!-- HOME PAGE -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Franklin Delos Santos- IS183 Midterm</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        body,
+        html {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .main-container-grid {
+            display: grid;
+            grid-template-rows: 1fr 13fr 1fr;
+            height: 100%;
+            grid-row-gap: 1em;
+        }
+
+        /* CSS for header and footer */
+        .r1,
+        .r3 {
+            display: grid;
+            background-color: #cccc;
+            padding: 1em;
+            align-items: center;
+        }
+
+        .r3 {
+            text-align: center;
+        }
+
+        /* CSS for main area */
+        .r2 {
+            height: 100%;
+            background-color: #f1f1f1;
+
+        }
+
+        .three-column {
+            display: grid;
+            grid-template-columns: 2fr 8fr 3fr;
+            background-color: #fff;
+        }
+
+        .c1,
+        .c3 {
+            background-color: #ccc;
+        }
+
+        .txt-center {
+            text-align: center;
+            margin: 15px auto 0px;
+            border-bottom: 1px solid #a8a7a7;
+            padding-bottom: 15px;
+        }
+
+        .left-nav {
+            list-style-type: none;
+        }
+
+        .left-nav>li>a {
+            display: block;
+            padding: 15px 0px 15px 30px;
+            background-color: #ccc;
+            font-weight: bold;
+            text-decoration: none;
+            transition-duration: 0.7s;
+        }
+
+        .left-nav>li>a:hover {
+            background-color: #8d8c8c;
+        }
+
+        .c2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        .h2-content {
+            grid-column: 1/5;
+            height: 20px;
+            width: 100%;
+        }
+    </style>
 </head>
-<body>
-    <!-- html comment -->
+
+<body class="main-container-grid">
+
+    <!-- HEADER -->
+    <div class="r1">
+        <h2>Franklin Delos Santos</h2>
+    </div>
+    <!-- MAIN AREA -->
+    <div class="r2 three-column">
+        <div class="c1">
+            <h2 class="txt-center">Navigation</h2>
+            <ul class="left-nav">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+            </ul>
+        </div>
+        <div class="c2">
+            <h2 class="txt-center h2-content">Recent Products</h2>
+            <!-- ADD IMGS HERE -->
+        </div>
+        <div class="c3">
+            <h2 class="txt-center">Recent Products</h2>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="r3">
+        r1
+    </div>
 </body>
+
 </html>
